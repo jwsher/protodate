@@ -1,0 +1,90 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<h3>Check out these awesome protodaters in your area !</h3>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4"></div>
+    <span class="col-lg-4">
+      <span ng-show="identity=='developer'">
+        <p>
+          Developer! Developers! Developers! I love this company!
+        </p>
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="name" class="col-sm-12 ">Name (Public!):</label>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <input type="name" class="form-control" id="name" placeholder="Name">
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="workingOn" class="col-sm-12 ">What are you interested in working on?</label>
+
+    <div class="row">
+      <div class="col-sm-12">
+      <textarea type="textarea" class="form-control" id="workingon">
+        Trying to take over the world!
+       </textarea>
+      </div>
+    </div>
+  </div>
+    <div class="form-group">
+     <div class="col-sm-offset-2 col-sm-10">
+       <li><a ng-click="developerSignup()" class="btn btn-block btn-social btn-facebook">
+         <i class="fa fa-facebook"></i> Sign in with Facebook
+       </a></li>
+     </div>
+   </div>
+</form>
+      </span>
+      <span ng-show="identity=='ideaguy'">
+        <p>
+        Wow! An Idea Guy.  When are you getting your third comma?
+        </p>
+ <form class="form-horizontal">
+   <div class="form-group">
+     <label for="name" class="col-sm-12 ">Name (Public!):</label>
+
+     <div class="row">
+       <div class="col-sm-12">
+         <input type="name" class="form-control" id="name" placeholder="Name">
+       </div>
+     </div>
+   </div>
+   <div class="form-group">
+     <label for="workingOn" class="col-sm-12 ">Tell us about your great idea(s) here:</label>
+
+     <div class="row">
+       <div class="col-sm-12">
+      <textarea type="textarea" class="form-control" id="workingon">
+        Something Something Something
+       </textarea>
+       </div>
+     </div>
+   </div>
+   <div class="form-group">
+     <div class="col-sm-offset-2 col-sm-10">
+       <li><a ng-click="ideaSignup()" class="btn btn-block btn-social btn-facebook">
+         <i class="fa fa-facebook"></i> Sign in with Facebook
+       </a></li>
+     </div>
+   </div>
+ </form>
+      </span>
+  </div>
+</div>
+<div class="col-lg-4"></div>
+</div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p> Brought to you by Justin Sher and Tim Reilly</p>
+    <a href="https://twitter.com/innovaedge">@innovaedge</a> |
+    <a href="https://twitter.com/timmyreilly">@timmyreilly</a> |
+    <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Issues</a></p>
+  </div>
+</footer>
